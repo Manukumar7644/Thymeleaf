@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+   <head>
+	<title>Thymeleaf Demo</title>
+   </head>	
+      <body>
+		<h1>Student Data</h1>
+		<hr/>
+		<div th:object="${student}">
+			Id:<strong><span th:text="*{id}"></span></strong><br/>
+			Name:<strong><span th:text="*{name}"></span></strong><br/>
+			Course:<strong><span th:text="*{course}"></span></strong><br/>
+		</div>
+	  </body>
+</html>
