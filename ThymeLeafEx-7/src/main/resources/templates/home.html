@@ -1,0 +1,9 @@
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+	<title>My Link Expression Ex</title>
+	<link th:href="@{/mystyles.css}" rel="stylesheet"/>
+  </head>	
+   <body>
+	   <a th:href="@{/showStudent/{id}(id=${id})}">Show Student</a>
+   </body>
+</html>
